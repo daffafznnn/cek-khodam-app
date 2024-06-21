@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Temukan khodam yang ada di dalam diri Anda dengan memasukkan nama Anda di sini. Cek khodam sekarang dan rasakan kehadirannya.">
+  <meta name="keywords" content="cek khodam, khodam, deteksi khodam, spiritual">
+  <meta name="author" content="daffafznnn">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="canonical" href="https://cekkhodambro.vercel.app">
+  <link rel="canonical" href="https://cek-khodam-gratis.vercel.app">
   <link
       rel="icon"
       type="image/svg+xml"
@@ -22,16 +24,15 @@
       background-image: url('../public/assets/bg-maung.jpg');
       background-size: cover;
       background-position: center;
-
     }
   </style>
-<title>Cek Khodam - Temukan Khodam Anda Sekarang!</title>
+  <title>Cek Khodam - Temukan Khodam Anda Sekarang!</title>
 </head>
 <body>
   <main class="container mx-auto flex min-h-screen w-full items-center justify-center px-4">
     <section class="flex flex-col space-y-10 w-full">
       <div class="bg-white/25 rounded-xl border backdrop-blur-lg w-full max-w-xl py-5 mx-auto">
-        <div class="text-center text-green-400 font-bold text-4xl sm:text-5xl">Check khodam</div>
+        <h1 class="text-center text-green-400 font-bold text-4xl sm:text-5xl">Cek Khodam</h1>
         <p class="text-md text-center sm:text-wrap text-white mt-2">Dengan memasukan nama anda, khodam ada di dalam diri anda</p>
         <form id="khodamForm">
           <div class="flex items-center justify-center mx-5 py-2">
@@ -39,20 +40,15 @@
           </div>
           <div class="flex items-center justify-center space-x-2">
             <button type="submit" class="py-2 px-5 bg-gradient-to-r from-lime-500 to-green-500 hover:bg-green-500 rounded-lg text-white font-medium">Kirim</button>
-             <button id="muteButton" type="button" class="hidden py-2 px-5 bg-gradient-to-r from-red-500 to-cyan-500 hover:bg-green-800 rounded-lg text-white font-medium">
+            <button id="muteButton" type="button" class="hidden py-2 px-5 bg-gradient-to-r from-red-500 to-cyan-500 hover:bg-green-800 rounded-lg text-white font-medium">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
-              <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06m7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0"/>
-            </svg>
+                <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06m7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0"/>
+              </svg>
             </button>
           </div>
         </form>
-        
-         <div class="flex justify-center items-center mt-4">
-           
-          </div>
-        <!-- result kodam -->
         <div id="resultSection" class="mt-6 hidden">
-          <h1 id="resultTitle" class="text-xl text-center text-gray-200 font-semibold"></h1>
+          <h2 id="resultTitle" class="text-xl text-center text-gray-200 font-semibold"></h2>
           <div id="resultContainer" class="flex-grow flex justify-center items-center mt-2 mx-auto bg-green-500 bg-opacity-90 max-w-[20rem] sm:max-w-[25rem] h-auto rounded-lg shadow-lg shadow-green-700">
             <p id="result" class="font-bold text-4xl text-green-900 text-center p-4">...</p>
           </div>
