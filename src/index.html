@@ -19,7 +19,7 @@
     }
 
     body {
-      background-image: url('./assets/bg-maung.jpg');
+      background-image: url('../public/assets/bg-maung.jpg');
       background-size: cover;
       background-position: center;
 
@@ -37,16 +37,18 @@
           <div class="flex items-center justify-center mx-5 py-2">
             <input type="text" name="name" id="name" class="w-full h-12 rounded-lg text-center bg-white/25 border placeholder-gray-200 placeholder-text-center" placeholder="Masukan Nama" required>
           </div>
-          <div class="flex items-center justify-center">
+          <div class="flex items-center justify-center space-x-2">
             <button type="submit" class="py-2 px-5 bg-gradient-to-r from-lime-500 to-green-500 hover:bg-green-500 rounded-lg text-white font-medium">Kirim</button>
-          </div>
-        </form>
-         <div class="flex justify-center items-center mt-4">
-            <button id="muteButton" type="button" class="hidden py-2 px-5 bg-gradient-to-r from-red-500 to-cyan-500 hover:bg-green-800 rounded-lg text-white font-medium">
+             <button id="muteButton" type="button" class="hidden py-2 px-5 bg-gradient-to-r from-red-500 to-cyan-500 hover:bg-green-800 rounded-lg text-white font-medium">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
               <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06m7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0"/>
             </svg>
             </button>
+          </div>
+        </form>
+        
+         <div class="flex justify-center items-center mt-4">
+           
           </div>
         <!-- result kodam -->
         <div id="resultSection" class="mt-6 hidden">
