@@ -2,40 +2,40 @@ document
   .getElementById("khodamForm")
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Mencegah pengiriman form
-
+    
     const khodams = [
       "Karbu Mio",
       "Cicak Goreng",
-      "Gajah petot",
+      "Gajah Petot",
       "Cicak Koplak",
-      "Wewe Goblok",
+      "Wewe Gombel",
       "Tali Jemuran",
       "Lele Betot",
-      "Babi Bingung",
+      "Babi Mager",
       "Panci Presto",
       "Tuyul Sinting",
       "Gendruwo Ndeso",
       "Sari Murni",
-      "Buto Bodoh",
+      "Buto Tolol",
       "Pocong Kepleset",
       "Setan Galau",
       "Hantu Ngeselin",
       "Jin Pirit",
       "Layang-layang",
-      "Kuntilanak Goblok",
+      "Kuntilanak Sumbing",
       "Demang Jahat",
-      "Si Manis Goblok",
+      "Si Manis Sumbing",
       "Kakek Kesel",
       "Gundul Pusing",
       "Suster Jail",
       "Pocong Gokil",
       "Jenglot Narsis",
       "Kalomang",
-      "Kolor Bodoh",
+      "Kolor Tolol",
       "Cipirit Malu",
       "Lembuswana Ngenes",
       "Gendruwo Betot",
-      "Siluman Goblok",
+      "Siluman Sumbing",
       "Anjing Ngambek",
       "Monyet Bangkrut",
       "Lutung Cengeng",
@@ -47,7 +47,7 @@ document
       "Srigala Stres",
       "Iblis Sok",
       "Tuyul Gagal",
-      "Kambing Goblok",
+      "Kambing Sumbing",
       "Tikus Ndeso",
       "Katak Koplak",
       "Kucing Sial",
@@ -57,37 +57,34 @@ document
       "Cacing Bego",
       "Kepiting Stres",
       "Kodok Pusing",
-      "Landak Bingung",
+      "Landak Mager",
       "Ular Sinting",
-      "Bebek Goblok",
+      "Bebek Sumbing",
       "Bunglon Malas",
       "Keong Ngesot",
-      "Kura-kura Bodoh",
+      "Kura-kura Tolol",
       "Gerobak Ketoprak",
       "Semut Ngeselin",
       "Labalaba Lemes",
-      "Capung Bingung",
-      "Cicada Bete",
+      "Capung Mager",
       "Kupu-kupu Sinting",
       "Laba-laba Betot",
       "Kecoak Koplak",
-      "Tupai Jahat",
+      "Tupai Ngising",
       "Kursi Malas",
       "Gorila Drible",
       "Kuda Nil Sial",
-      "Panda Jahat",
+      "Panda Ngising",
       "Musang Sinting",
-      "Domba Malu",
-      "Kucing Bangkrut",
+      "Domba Garut",
       "Ikan Cupang Hytam",
-      "Badak Goblok",
-      "Komodo Bodoh",
-      "Kolibri Ngambek",
+      "Badak Sumbing",
+      "Komodo Tolol",
       "Kawat Nyamuk",
-      "Cendrawasih Pusing",
+      "Cendrawasih Pincang",
       "Siput Koplak",
-      "Katak Ndeso",
-      "Kucing Pusing",
+      "Katak Tolol",
+      "Kucing Berak",
       "Kuda Lumping",
       "Cendol Dawet",
       "Toa Masjid",
@@ -97,15 +94,60 @@ document
       "Kipas Angin",
       "Stop Kontak",
       "Teh Poci",
-    ];
-
-    const soundEffects = [
-      "../public/assets/sound/Random Sound Meme Absurd memebacksound.mp3",
-      "../public/assets/sound/y2mate.com - Acumalaka  sound effect.mp3",
-      "../public/assets/sound/soundtrack meme alamak sedapnyee 😋.mp3",
-      "../public/assets/sound/WAIT WAIT WAIT WAT THE HELLLLLL FULL.mp3",
-      "../public/assets/sound/udah bang tapi.mp3",
-      "../public/assets/sound/Y2meta.app - SUS meme sound effect (320 kbps).mp3",
+      "Piston Beat",
+      "Anies Baswedan",
+      "Mimi Peri",
+      "Lampu Ayam",
+      "Knalpot Bocor",
+      "Dinamo Starter",
+      "Kampas Rem",
+      "Spion Tumpul",
+      "Kabel Putus",
+      "Busi Kotor",
+      "Stang Bengkok",
+      "Velg Bengkok",
+      "Karburator Bocor",
+      "Kopling Licin",
+      "Sokbreker Bengkok",
+      "Bensin Habis",
+      "Oli Kurang",
+      "Aki Lemah",
+      "Ban Bocor",
+      "Gearbox Butut",
+      "Transmisi Macet",
+      "Filter Oli Kotor",
+      "Panel Instrumen Mati",
+      "Kabel Gas Putus",
+      "Speedometer Tidak Akurat",
+      "Rantai Motor Kendur",
+      "Ecu Bermasalah",
+      "Tangki Bocor",
+      "Radiator Kotor",
+      "Karburator Kotor",
+      "Busi Butut",
+      "Kabel Busi Putus",
+      "Rem Blong",
+      "Pompa Bensin Butut",
+      "Ban Kempes",
+      "Soket Lampu Mati",
+      "Sensor Tidak Berfungsi",
+      "Dinamo Starter Mati",
+      "Busi Tidak Menyala",
+      "Radiator Bocor",
+      "Filter Udara Kotor",
+      "Panel Instrumen Error",
+      "Tangki Kecil",
+      "Kopling Licin",
+      "Transmisi Macet",
+      "Gearbox Butut",
+      "Ban Kempes",
+      "Sparepart Salah",
+      "Bodi Tidak Sempurna",
+      "Knalpot Tidak Berfungsi",
+      "Stang Tidak Nyaman",
+      "Velg Butut",
+      "Kaca Spion",
+      "Spoiler Butut",
     ];
 
     const images = [
@@ -145,13 +187,15 @@ document
     const loadingElement = document.getElementById("loading"); // Ambil elemen loading
     const randomImage = document.getElementById("randomImage"); // Ambil elemen randomImage
     const randomImg = document.getElementById("randomImg"); // Ambil elemen randomImg
-    const muteButton = document.getElementById("muteButton"); // Ambil elemen tombol mute
+    const contentForm = document.getElementById("contentForm");
+    const recheck = document.getElementById("recheck");
 
     // Sembunyikan section hasil dan tampilkan loading spinner
     resultSection.classList.add("hidden");
     randomImage.classList.add("hidden");
     loadingElement.classList.remove("hidden");
-    muteButton.classList.add("hidden");
+    contentForm.classList.add("hidden");
+    recheck.classList.add("hidden");
 
     // Simulasikan penundaan loading
     setTimeout(() => {
@@ -160,7 +204,6 @@ document
 
       // Pilih khodam, sound effect, dan gambar secara acak
       const randomKhodam = khodams[Math.floor(Math.random() * khodams.length)];
-      const randomSound = soundEffects[Math.floor(Math.random() * soundEffects.length)];
       const randomImageSrc = images[Math.floor(Math.random() * images.length)];
 
       // Setel teks hasil dengan nama dan khodam
@@ -175,17 +218,23 @@ document
 
       // Tampilkan section hasil dan random image
       resultSection.classList.remove("hidden");
+      resultTitle.classList.remove("hidden");
+      resultElement.classList.remove("hidden");
       randomImage.classList.remove("hidden");
-      muteButton.classList.remove("hidden");
-
-      // Mainkan sound effect
-       const audio = new Audio(randomSound);
-       audio.play();
-
-       // Fungsi untuk mute dan unmute
-       muteButton.addEventListener("click", function () {
-         audio.muted = true;
-         muteButton.classList.add("hidden");
-       });
+      recheck.classList.remove("hidden");
     }, 3000);
   });
+
+function handleRecheck() {
+  const contentForm = document.getElementById("contentForm");
+  const recheck = document.getElementById("recheck");
+  const resultTitle = document.getElementById("resultTitle");
+  const resultElement = document.getElementById("result");
+  const randomImage = document.getElementById("randomImage");
+
+  contentForm.classList.remove("hidden");
+  recheck.classList.add("hidden");
+  resultTitle.classList.add("hidden");
+  resultElement.classList.add("hidden");
+  randomImage.classList.add("hidden");
+}

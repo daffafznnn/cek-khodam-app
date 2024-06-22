@@ -1,0 +1,39 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-image: url('../public/assets/bg-maung.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .fixed-top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      /* Adjust this value if the height of the iframe changes */
+      padding-bottom: 50px;
+      background-color: rgba(0, 0, 0, 0.567);
+    }
+
+    footer {
+      background-color: rgba(31, 41, 55, 0.9);
+    }
